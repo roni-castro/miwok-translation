@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/tan_background"
+    android:orientation="horizontal">
+
+    // Image icon
+    <ImageView
+        style="@style/ImageItemStyle"
+        android:id="@+id/image_view"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    // Vertical Linear Layout for the 2 TextView
+    <LinearLayout
+        android:id="@+id/text_container"
+        style="@style/TextContainerLayoutStyle">
+
+        // Miowk Translation
+        <TextView
+            style="@style/TextItemStyle"
+            android:id="@+id/miwok_text_view"
+            android:textStyle="bold"
+            tools:text="miwok"/>
+
+        // Default Translation
+        <TextView
+            style="@style/TextItemStyle"
+            android:id="@+id/default_text_view"
+            tools:text="default"/>
+    </LinearLayout>
+</LinearLayout>
